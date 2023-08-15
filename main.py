@@ -28,8 +28,6 @@ GPIO.setup (LED_2, GPIO.OUT)
 GPIO.setup (LED_3, GPIO.OUT)
 GPIO.setup (LED_ERR, GPIO.OUT)
 
-
-
 # Function to create a conversation with Bing Chat
 async def create_conversation():
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"} # Header containing User-Agent key and value neccessary for proper response
@@ -178,8 +176,6 @@ async def main():
                     
                     GPIO.output(LED_ERR, False) # Turn off error LED
                     # And try to intercept a prompt again
-
-                
                 
 if __name__ == "__main__": # On code execution
     try:
